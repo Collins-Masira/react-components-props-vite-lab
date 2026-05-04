@@ -1,5 +1,7 @@
-function Article(props) {
-  const { title, date, preview } = props.post;
+function Article({ post }) {
+  if (!post) return null; // prevents crash
+
+  const { title, date, preview } = post;
 
   return (
     <article>

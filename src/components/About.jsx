@@ -1,9 +1,9 @@
-function About(props) {
+function About({ about, image = "https://via.placeholder.com/150" }) {
   return (
-    <section>
-      <h2>About</h2>
-      <p>{props.about}</p>
-    </section>
+    <aside>
+      <img src={image} alt="blog logo" />
+      <p>{about}</p>
+    </aside>
   );
 }
 
