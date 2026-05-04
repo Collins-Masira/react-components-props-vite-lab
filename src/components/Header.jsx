@@ -1,9 +1,7 @@
-function Header() {
+export default function Header({ name }) {
   return (
     <header>
-      <h1>My Blog</h1>
+      <h1>{name}</h1>
     </header>
   );
 }
-
-export default Header;

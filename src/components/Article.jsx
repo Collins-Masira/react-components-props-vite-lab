@@ -1,9 +1,9 @@
-function Article({ post = {} }) {
+function Article({ title, date = "January 1, 1970", preview }) {
   return (
     <article>
-      <h3>{post.title || "No title"}</h3>
-      <small>{post.date || "No date"}</small>
-      <p>{post.preview || "No preview"}</p>
+      <h3>{title}</h3>
+      <small>{date}</small>
+      <p>{preview}</p>
     </article>
   );
 }

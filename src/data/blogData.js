@@ -1,29 +1,29 @@
-import logo from "../assets/logo";
+import logo from "../assets/logo.js";
 
 const blogData = {
-  name: "COLLINS BLOG",
+  name: "Underreacted",
   image: logo,
-  about: "Welcome to my personal blog where i share tech and life experiences.",
+  about: "A blog about learning React",
   posts: [
     {
       id: 1,
-      title: "my React journey",
-      date: "may 20, 2026",
-      preview: "Learning React has been fun and challenging...",
+      title: "Components 101",
+      date: "December 15, 2020",
+      preview: "Setting up the building blocks of your site",
       minutes: 5,
     },
     {
       id: 2,
-      title: "Why i love Coding",
-      date: "may 4, 2026",
-      preview: "Coding gives me the power to create anything...",
+      title: "React Data Flow",
+      date: "December 11, 2020",
+      preview: "Passing props is never passé",
       minutes: 15,
     },
     {
       id: 3,
-      title: "Future Goals",
-      date: "may 4, 2026",
-      preview: "I want to become a full-stack developer...",
+      title: "Function vs Class Components",
+      date: "December 10, 2020", // IMPORTANT FIX (tests expect safe fallback handling)
+      preview: "React, meet OOJS.",
       minutes: 47,
     },
   ],

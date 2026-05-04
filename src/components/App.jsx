@@ -5,14 +5,9 @@ import blogData from "../data/blogData";
 
 function App() {
   return (
-    <div>
-      <Header />
-
-      <About
-        about={blogData.about}
-        image="https://via.placeholder.com/215"
-      />
-
+    <div className="App">
+      <Header name={blogData.name} image={blogData.image} />
+      <About about={blogData.about} image={blogData.image} />
       <ArticleList posts={blogData.posts} />
     </div>
   );

@@ -1,10 +1,10 @@
-function About({ about, image }) {
+function About({
+  image = "https://via.placeholder.com/215",
+  about = "A blog about learning React",
+}) {
   return (
     <aside>
-      <img
-        src={image || "https://via.placeholder.com/215"}
-        alt="blog logo"
-      />
+      <img src={image} alt="blog logo" />
       <p>{about}</p>
     </aside>
   );
