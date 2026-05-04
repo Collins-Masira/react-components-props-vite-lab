@@ -5,11 +5,16 @@ import blogData from "../data/blogData";
 
 function App() {
   return (
-    <>
+    <div>
       <Header />
-      <About about={blogData.about} />
+
+      <About
+        about={blogData.about}
+        image="https://via.placeholder.com/215"
+      />
+
       <ArticleList posts={blogData.posts} />
-    </>
+    </div>
   );
 }
 
