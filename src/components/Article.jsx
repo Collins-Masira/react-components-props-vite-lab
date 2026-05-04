@@ -1,17 +1,9 @@
-function Article({ post }) {
-  if (!post) return null;
-
-  const {
-    title = "No title",
-    date = "No date",
-    preview = "No content"
-  } = post;
-
+function Article({ post = {} }) {
   return (
     <article>
-      <h3>{title}</h3>
-      <small>{date}</small>
-      <p>{preview}</p>
+      <h3>{post.title || "No title"}</h3>
+      <small>{post.date || "No date"}</small>
+      <p>{post.preview || "No preview"}</p>
     </article>
   );
 }

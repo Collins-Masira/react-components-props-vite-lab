@@ -5,11 +5,11 @@ import blogData from "../data/blogData";
 
 function App() {
   return (
-    <div>
-      <Header name={blogData.name} />
+    <>
+      <Header />
       <About about={blogData.about} />
       <ArticleList posts={blogData.posts} />
-    </div>
+    </>
   );
 }
 
