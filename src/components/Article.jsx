@@ -1,7 +1,11 @@
 function Article({ post }) {
-  if (!post) return null; // prevents crash
+  if (!post) return null;
 
-  const { title, date, preview } = post;
+  const {
+    title = "No title",
+    date = "No date",
+    preview = "No content"
+  } = post;
 
   return (
     <article>
